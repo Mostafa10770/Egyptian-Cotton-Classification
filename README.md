@@ -61,6 +61,5 @@ This project is developed under the auspices of A&M Startup.
 
 This project is open-source and licensed under the [MIT License](LICENSE). 📜
 
-![License](path_to_license_image.png)
 
 Feel free to get involved and happy classifying! 🌾👨‍🔬👩‍🔬
