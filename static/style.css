@@ -1,0 +1,132 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  
+  header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+  }
+  
+  .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1rem;
+  }
+  
+  .page {
+      display: none;
+  }
+  
+  .page.active {
+      display: block;
+  }
+  
+  button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+  }
+  
+  .classification-form {
+      margin-top: 1rem;
+  }
+  
+  .classification-result {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+  }
+  
+  h1 {
+      text-align: center;
+  }
+  
+  /* Additions and modifications */
+.cotton-image {
+    max-width: 100%;
+    display: block;
+    margin: 1rem auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Keep the existing CSS rules */
+
+
+/* Additions and modifications */
+.upload-area {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.upload-label {
+    display: inline-block;
+    cursor: pointer;
+    border: 2px dashed #007bff;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+}
+
+.upload-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #007bff;
+}
+
+.upload-text {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.upload-label:hover {
+    border: 2px dashed #0056b3;
+}
+
+.uploaded-image {
+    display: none;
+    margin-top: 1rem;
+}
+
+.classify-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.classify-button:hover {
+    background-color: #0056b3;
+}
+
+.back-button {
+    background-color: #dc3545;
+    margin-top: 1rem;
+}
+
+/* Keep the existing CSS rules */
+
+/* Additional CSS for animations */
+@keyframes fade-in {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.page {
+    opacity: 0; /* Start with a hidden page */
+    animation: fade-in 0.8s forwards; /* Apply fade-in animation */
+}
+
+.uploaded-image {
+    animation: fade-in 0.8s 0.3s forwards; /* Delayed fade-in for uploaded image */
+}
+
+/* Rest of the existing CSS remains unchanged */

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotton Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <header>
+        <h1>Cotton Classification</h1>
+    </header>
+
+    <div class="container">
+        <!-- Home page content -->
+        <div id="home-page" class="page active">
+            <h2>Welcome to the Cotton Classification AI</h2>
+            <p>Here, you can classify cotton fibers into different categories using our advanced AI model.</p>
+            <p>Simply upload an image of a cotton fiber, and our AI will predict its category for you!</p>
+            <div class="upload-area">
+                <label for="image-upload" class="upload-label">
+                    <input type="file" id="image-upload" name="file" accept="image/*" onchange="displayImage(this)">
+                    <span class="upload-icon">+</span>
+                    <span class="upload-text">Click or Drag & Drop an Image</span>
+                </label>
+                <div id="uploaded-image" class="uploaded-image">
+                    <!-- Uploaded image will appear here -->
+                </div>
+            </div>
+            <button type="button" class="classify-button" onclick="classifyImage()">Classify</button>
+        </div>
+
+        <!-- Result page content -->
+        <div id="result-page" class="page">
+            <h2>Classification Result</h2>
+            <div class="classification-result" id="result">
+                <!-- Classification result will appear here -->
+            </div>
+            <button id="back-button" class="back-button" onclick="goToHomePage()">Back to Home</button>
+        </div>
+    </div>
+    <footer class="team-members">
+        <p style="color: #aaa; font-size: 1.2rem; position: absolute; bottom: 0; right: 0; margin: 0; padding: 20px;">
+            TEAM members: <br>
+            - Mostafa Magdy <br>
+            - George Youhana <br>
+            - Abdallah Alkoly <br>
+            - Ahmed Refay
+        </p>
+    </footer>
+</body>
+</html>
